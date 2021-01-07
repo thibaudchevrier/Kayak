@@ -12,7 +12,6 @@ BOT_NAME = 'booking'
 SPIDER_MODULES = ['booking.spiders']
 NEWSPIDER_MODULE = 'booking.spiders'
 
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Chrome/84.0'
 
