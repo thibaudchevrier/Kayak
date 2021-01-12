@@ -31,7 +31,7 @@ class HotelsSpider(scrapy.Spider):
             coordinate = hotel.xpath('.//div[contains(@class, "sr_card_address_line")]')
             
             # lattitude and longitude
-            lattitude, longitude = coordinate.xpath('.//a[contains(@class, "bui-link")]/@data-coords').get().split(",")
+            longitude, lattitude = coordinate.xpath('.//a[contains(@class, "bui-link")]/@data-coords').get().split(",")
 
             # distance
             distance = coordinate.xpath('.//span[2]/text()').get()
